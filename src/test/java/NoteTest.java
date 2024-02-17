@@ -65,7 +65,7 @@ class NoteTest {
 	}
 
 	@Test
-	@DisplayName("given today is my birthday write reading note and my note should contain 🎂")
+	@DisplayName("given today is my birthday write reading note and my note should contain ^_^")
 	void writeNoteOnMyBirthday() {
 		TextFile textFile = mock(TextFile.class);
 		BirthdayChecker birthdayChecker = mock(BirthdayChecker.class);
@@ -74,7 +74,7 @@ class NoteTest {
 
 		note.write("Reading book");
 
-		String expected = "Reading book";
+		String expected = "Reading book ^_^";
 		verify(textFile).write("note.txt", expected);
 	}
 

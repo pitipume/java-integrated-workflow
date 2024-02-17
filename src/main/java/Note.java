@@ -22,7 +22,7 @@ public class Note {
 
 	public void write(String content) {
 		if (birthdayChecker != null && birthdayChecker.isBirthday()) {
-			content += " 🎂";
+			content += " ^_^";
 		}
 		textFile.write(DEFAULT_FILE_NAME, content);
 	}
